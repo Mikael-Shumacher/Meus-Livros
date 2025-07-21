@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.logo {
+    background-image: linear-gradient(45deg, blue, cornflowerblue);
+    padding: 15px;
+    border-bottom: 2px solid yellow;
+}
+
+.nav-bar {
+    padding: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
