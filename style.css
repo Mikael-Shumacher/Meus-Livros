@@ -76,6 +76,30 @@ main{
     flex-shrink: 0;
 }
 
+.adiciona{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 500px;
+    border-radius: 8px;
+    border: 2px solid #cc0000;
+    font-size: 25px;
+    position: absolute ;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title-adiciona{
+        text-align: center ;
+}
+
+.form-adiciona{
+    display: grid;
+    padding: 30px;
+    gap: 5px;
+}
 
 .hide{
     display: none;
