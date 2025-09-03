@@ -22,7 +22,7 @@
             </nav>
         </header>
         <main>
-            <div class="adiciona" class="hide">
+            <div class="adicionar hide">
                 <h2 id="title-adiciona">ADICIONAR LIVRO</h2>
                 <form
                     class="form-adiciona"
@@ -60,8 +60,10 @@
                         <option value="outro">Outros</option>
                     </select>
                     <label>Finalizado:</label>
-                    <input type="radio" name="finalizado" value="sim" />
-                    <input type="radio" name="finalizado" value="nao" />
+                    <select id="final" name="finalizado">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
                     <label>Data de publicação:</label>
                     <input type="date" name="data_publi" id="data-publi" />
                     <label>Resumo:</label>
@@ -69,6 +71,7 @@
                         placeholder="Fale um pouco sobre o livro"
                         id="resumo"
                     ></textarea>
+                    <button id="exit-adicionar">Cancelar</button>
                     <input type="submit" value="Adicionar" id="envia" />
                 </form>
             </div>
