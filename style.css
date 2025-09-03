@@ -16,7 +16,7 @@
 
 .logo {
     background-image: linear-gradient(45deg, blue, #0b305b);
-    font-size: 20px;
+    font-size: 18px;
     padding: 15px;
     border-bottom: 2px solid #bf781e;
 }
@@ -24,7 +24,7 @@
 .nav-bar {
     flex-shrink: 0;
     padding: 10px;
-    border-bottom: 2px solid #bf781e;
+    border-bottom: 1px solid #bf781e;
 }
 
 .buttons {
@@ -34,7 +34,7 @@
 }
 
 button {
-    font-size: 23px;
+    font-size: 15px;
     padding: 8px;
     background-color: #212c96;
     border-radius: 10px;
@@ -47,45 +47,60 @@ button:hover {
     cursor: pointer;
     transition: 0.3s;
     background-color: #cc0000;
-    // R--  G--  B--  A--
-    // 1D1C20 869621
 }
 
-main{
+main {
     flex: 1 0 auto;
+    width: 100%;
+    height: 100vh;
     background-color: #869621;
 }
 
-.livros{
-    background-color: #869621;
+.livros {
+    display: grid;
 }
 
-
-.bottom{
+.bottom {
     flex-shrink: 0;
 }
 
-
-#title-adiciona{
-        text-align: center ;
+#title-adiciona {
+    text-align: center;
 }
 
-.form-adiciona{
+.form-adiciona {
     display: grid;
-    padding: 30px;
-    gap: 5px;
+    justify-content: start;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.adicionar{
-    width: 500px;
+.itens-form {
+    padding: 5px;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.adicionar {
+    display: grid;
+    width: 300px;
     border-radius: 8px;
     border: 1px solid #cc0000;
     font-size: 15px;
     position: relative;
-    background-image: linear-gradient(45deg, rgba(37, 63, 111, 0.877), rgba(14, 214, 26, 0.803));
+    background-image: linear-gradient(
+        45deg,
+        rgba(37, 63, 111, 0.877),
+        rgba(14, 214, 26, 0.803)
+    );
 }
 
-.hide{
+.hide {
     display: none;
     visibility: hidden;
     opacity: 0;

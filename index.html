@@ -22,57 +22,75 @@
             </nav>
         </header>
         <main>
-            <div class="adicionar hide">
+            <div class="adicionar">
                 <h2 id="title-adiciona">ADICIONAR LIVRO</h2>
                 <form
                     class="form-adiciona"
                     action="local-de-envio"
                     method="post"
                 >
-                    <label>Capa do livro</label>
-                    <input type="file" id="capa" />
-                    <label>Título:</label>
-                    <input
-                        type="text"
-                        placeholder="Título do livro"
-                        id="titulo"
-                    />
-                    <label>Autor:</label>
-                    <input
-                        type="text"
-                        placeholder="Autor do livro"
-                        id="autor"
-                    />
-                    <label>Páginas:</label>
-                    <input
-                        type="number"
-                        name="pags"
-                        id="num_pags"
-                        placeholder="Número de páginas do livro"
-                    />
-                    <label>Gênero:</label>
-                    <select id="genero" name="generos">
-                        <option value="mat">Matemática</option>
-                        <option value="fis">Física</option>
-                        <option value="prog">Programação</option>
-                        <option value="quim">Química</option>
-                        <option value="eletr">Eletrônica</option>
-                        <option value="outro">Outros</option>
-                    </select>
-                    <label>Finalizado:</label>
-                    <select id="final" name="finalizado">
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                    </select>
-                    <label>Data de publicação:</label>
-                    <input type="date" name="data_publi" id="data-publi" />
-                    <label>Resumo:</label>
-                    <textarea
-                        placeholder="Fale um pouco sobre o livro"
-                        id="resumo"
-                    ></textarea>
-                    <button id="exit-adicionar">Cancelar</button>
-                    <input type="submit" value="Adicionar" id="envia" />
+                    <div class="itens-form">
+                        <label>Capa: </label>
+                        <input type="file" id="capa" />
+                    </div>
+                    <div class="itens-form">
+                        <label>Título:</label>
+                        <input
+                            type="text"
+                            placeholder="Título do livro"
+                            id="titulo"
+                        />
+                    </div>
+                    <div class="itens-form">
+                        <label>Autor:</label>
+                        <input
+                            type="text"
+                            placeholder="Autor do livro"
+                            id="autor"
+                        />
+                    </div>
+                    <div class="itens-form">
+                        <label>Páginas:</label>
+                        <input
+                            type="number"
+                            name="pags"
+                            id="num_pags"
+                            placeholder="Número de páginas do livro"
+                        />
+                    </div>
+                    <div class="itens-form">
+                        <label>Gênero:</label>
+                        <select id="genero" name="generos">
+                            <option value="mat">Matemática</option>
+                            <option value="fis">Física</option>
+                            <option value="prog">Programação</option>
+                            <option value="quim">Química</option>
+                            <option value="eletr">Eletrônica</option>
+                            <option value="outro">Outros</option>
+                        </select>
+                    </div>
+                    <div class="itens-form">
+                        <label>Finalizado:</label>
+                        <select id="final" name="finalizado">
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <div class="itens-form">
+                        <label>Data de publicação:</label>
+                        <input type="date" name="data_publi" id="data-publi" />
+                    </div>
+                    <div class="itens-form">
+                        <label>Resumo:</label>
+                        <textarea
+                            placeholder="Fale um pouco sobre o livro"
+                            id="resumo"
+                        ></textarea>
+                    </div>
+                    <div class="itens-form">
+                        <button id="exit-adicionar">Cancelar</button>
+                        <input type="submit" value="Adicionar" id="envia" />
+                    </div>
                 </form>
             </div>
             <div class="livros">
