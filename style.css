@@ -62,18 +62,19 @@ body {
 }
 
 .form-adiciona {
-    display: grid;
-    place-items: center;
-    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     margin: 5px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .itens-form {
     gap: 3px;
-    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
@@ -81,11 +82,11 @@ body {
 
 .adicionar {
     position: absolute;
+    gap: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: grid;
-    width: 300px;
+    width: 500px;
     border: 1px solid #ffffff;
     border-radius: 8px;
     font-size: 15px;
@@ -116,6 +117,11 @@ textarea {
     border-radius: 8px;
 }
 
+.buttons-adiciona {
+    padding: 20px;
+    gap: 20px;
+}
+
 #capa {
     background-color: transparent;
     padding: 3px;
@@ -126,7 +132,8 @@ textarea {
 }
 
 #exit-adicionar:hover {
-    background-color: #000000;
+    background-color: white;
+    color: black;
 }
 
 #envia {
@@ -142,7 +149,8 @@ textarea {
 #envia:hover {
     cursor: pointer;
     transition: 0.3s;
-    background-color: #000000;
+    background-color: white;
+    color: black;
 }
 
 ul {
