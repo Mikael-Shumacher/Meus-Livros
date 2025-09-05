@@ -30,8 +30,8 @@
                     method="post"
                 >
                     <div class="itens-form">
-                        <label>Capa: </label>
-                        <input type="file" id="capa" />
+                        <label for="capa">Capa: </label>
+                        <input type="file" id="capa" accept=".jpg, .jpeg, .png"/>
                     </div>
                     <div class="itens-form">
                         <label>Título:</label>
@@ -56,6 +56,8 @@
                             name="pags"
                             id="num_pags"
                             placeholder="Número de páginas"
+                            min="1"
+                            max="10000"
                         />
                     </div>
                     <div class="itens-form">
@@ -81,16 +83,16 @@
                         <input type="date" name="data_publi" id="data-publi" />
                     </div>
                     <div class="itens-form">
-                        <label>Resumo:</label>
                         <textarea
-                            placeholder="Fale um pouco sobre o livro"
+                            placeholder=" Um breve resumo do livro 
+                            "
                             id="resumo"
                         ></textarea>
                     </div>
                 </form>
                 <div class="itens-form buttons-adiciona">
                     <button id="exit-adicionar">Cancelar</button>
-                    <button id="envia">Adicionar</button>
+                    <button id="envia" type="submit">Adicionar</button>
                 </div>
             </div>
             <ul id="lista-livros">
@@ -106,50 +108,6 @@
                 </li>
                 <li id="itens-livros">
                     <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">3</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">4</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">5</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">6</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">7</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">8</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">9</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">10</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">8</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">9</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">10</h2>
                     <img id="img-livro" />
                 </li>
             </ul>
