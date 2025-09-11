@@ -24,76 +24,78 @@
         <main>
             <div class="adicionar" id="adicionar-div">
                 <h2 id="title-adiciona">ADICIONAR LIVRO</h2>
-                <form
-                    class="form-adiciona"
-                    action="local-de-envio"
-                    method="post"
-                >
-                    <div class="itens-form">
-                        <label for="capa">Capa: </label>
-                        <input
-                            type="file"
-                            id="capa"
-                            accept=".jpg, .jpeg, .png"
-                        />
-                    </div>
-                    <div class="itens-form">
-                        <label>Título:</label>
-                        <input
-                            type="text"
-                            placeholder="Título do livro"
-                            id="titulo"
-                        />
-                    </div>
-                    <div class="itens-form">
-                        <label>Autor:</label>
-                        <input
-                            type="text"
-                            placeholder="Autor do livro"
-                            id="autor"
-                        />
-                    </div>
-                    <div class="itens-form">
-                        <label>Páginas:</label>
-                        <input
-                            type="number"
-                            name="pags"
-                            id="num_pags"
-                            placeholder="Número de páginas"
-                            min="1"
-                            max="10000"
-                        />
-                    </div>
-                    <div class="itens-form">
-                        <label>Gênero:</label>
-                        <select id="genero" name="generos">
-                            <option value="mat">Matemática</option>
-                            <option value="fis">Física</option>
-                            <option value="prog">Programação</option>
-                            <option value="quim">Química</option>
-                            <option value="eletr">Eletrônica</option>
-                            <option value="outro">Outros</option>
-                        </select>
-                    </div>
-                    <div class="itens-form">
-                        <label>Finalizado:</label>
-                        <select id="final" name="finalizado">
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    <div class="itens-form">
-                        <label>Data de publicação:</label>
-                        <input type="date" name="data_publi" id="data-publi" />
-                    </div>
-                    <div class="itens-form">
-                        <textarea
-                            placeholder=" Um breve resumo do livro
-                            "
-                            id="resumo"
-                        ></textarea>
-                    </div>
-                </form>
+                <div class="card-forms">
+                    <form
+                        class="form-adiciona"
+                        action="local-de-envio"
+                        method="post"
+                    >
+                        <div class="itens-form">
+                            <label for="capa">Capa: </label>
+                            <input
+                                type="file"
+                                id="capa"
+                                accept=".jpg, .jpeg, .png"
+                            />
+                        </div>
+                        <div class="itens-form">
+                            <label>Título:</label>
+                            <input
+                                type="text"
+                                placeholder="Título do livro"
+                                id="titulo"
+                            />
+                        </div>
+                        <div class="itens-form">
+                            <label>Autor:</label>
+                            <input
+                                type="text"
+                                placeholder="Autor do livro"
+                                id="autor"
+                            />
+                        </div>
+                        <div class="itens-form">
+                            <label>Páginas:</label>
+                            <input
+                                type="number"
+                                name="pags"
+                                id="num_pags"
+                                placeholder="Número de páginas"
+                                min="1"
+                                max="10000"
+                            />
+                        </div>
+                        <div class="itens-form">
+                            <label>Gênero:</label>
+                            <select id="genero" name="generos">
+                                <option value="mat">Matemática</option>
+                                <option value="fis">Física</option>
+                                <option value="prog">Programação</option>
+                                <option value="quim">Química</option>
+                                <option value="eletr">Eletrônica</option>
+                                <option value="outro">Outros</option>
+                            </select>
+                        </div>
+                        <div class="itens-form">
+                            <label>Finalizado:</label>
+                            <select id="final" name="finalizado">
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
+                            </select>
+                        </div>
+                        <div class="itens-form">
+                            <label>Data de publicação:</label>
+                            <input type="date" name="data_publi" id="data-publi" />
+                        </div>
+                        <div class="itens-form">
+                            <textarea
+                                placeholder=" Um breve resumo do livro
+                                "
+                                id="resumo"
+                            ></textarea>
+                        </div>
+                    </form>
+                </div>
                 <div class="itens-form buttons-adiciona">
                     <button id="exit-adicionar">Cancelar</button>
                     <button id="envia" type="submit">Adicionar</button>
@@ -110,114 +112,7 @@
                     <h2 id="title-livro">1</h2>
                     <img id="img-livro" />
                 </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">1</h2>
-                    <img id="img-livro" />
-                </li>
-                <li id="itens-livros">
-                    <h2 id="title-livro">2</h2>
-                    <img id="img-livro" />
-                </li>
+                
             </ul>
         </main>
         <footer class="bottom"></footer>
