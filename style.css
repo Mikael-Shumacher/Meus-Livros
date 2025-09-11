@@ -52,8 +52,7 @@ button:hover {
 body {
     background-color: #218896;
     width: 100dvw;
-    height: 100dvh;
-    position: fixed ;
+    height: auto;
 }
 .bottom {
     flex-shrink: 0;
@@ -95,14 +94,6 @@ body {
     text-align: center;
 }
 
-.itens-form {
-    gap: 3px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 12px;
-}
 
 input {
     background-color: black;
